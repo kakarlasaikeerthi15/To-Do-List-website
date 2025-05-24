@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background:#ffffff;
+            color: #333;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+        .container {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #ccc;
+        }
+        input, button {
+            padding: 8px;
+            margin: 5px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .task {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .task b {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .task button {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do App</h1>
+
+        <!-- Auth Section -->
+        <div id="auth">
+            <input id="username" placeholder="Username" />
+            <input id="password" type="password" placeholder="Password" />
+            <button onclick="signup()">Sign Up</button>
+            <button onclick="login()">Log In</button>
+        </div>
+
+        <!-- To-Do Section -->
+        <div id="todoSection" style="display:none;">
+            <h3>Welcome, <span id="userDisplay"></span></h3>
+
+            <input id="title" placeholder="Task Title" />
+            <input id="description" placeholder="Description" />
+            <input id="due_date" type="date" />
+            <button onclick="addTask()">Add Task</button>
+
+            <div id="taskList"></div>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+
