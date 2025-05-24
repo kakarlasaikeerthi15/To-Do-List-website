@@ -1,0 +1,47 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+/* Container for the App */
+.container {
+    background: orange;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #aaa;
+}
+
+/* Inputs and Buttons */
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Task Display */
+.task {
+    background:#ffffff;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px #ccc;
+}
+
+/* Completed Task Style */
+.done {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Buttons inside tasks */
+.task button {
+    margin-top: 5px;
+    margin-right: 5px;
+}
