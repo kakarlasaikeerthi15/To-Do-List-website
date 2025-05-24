@@ -1,0 +1,11 @@
+{
+  "users": [
+    { "id": "user001", "name": "John Doe" },
+    { "id": "user002", "name": "Jane Smith" }
+  ],
+  "tasks": [
+    { "id": 1, "userId": "user001", "task": "Buy groceries", "completed": false },
+    { "id": 2, "userId": "user001", "task": "Finish report", "completed": true },
+    { "id": 3, "userId": "user002", "task": "Book doctor appointment", "completed": false }
+  ]
+}
